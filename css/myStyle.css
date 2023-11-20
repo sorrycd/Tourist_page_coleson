@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Slab:wght@600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ececec;
+}
+
+p {
+    font-size: larger;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+}
+
+hr {
+    background-color: white;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif; 
+}
+
+h1 {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4); 
+}
+
+/* header Background */
+header {
+    background: url('../images/City_bridge.jpg') center / cover no-repeat fixed;
+    height: 45vh;
+}
+
+/* navbar Styles */
+.navbar {
+    background-color: #003366; /* Blue background */
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #ffffff !important; /* White text */
+}
+
+.navbar-nav .nav-item {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Icon Button Styles */
+.icon-button {
+    width: 100%;
+    padding: 60px 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: white; 
+    color: #000000;
+    border: 3px solid #003366; 
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.icon-button:hover {
+    background-color: #003366; /* blue background on hover */
+    color: #ffffff; /* white text on hover */
+}
+
+.icon-button:active, .icon-button:focus {
+    background-color: #ffffff; 
+    color: #000000 !important;
+    border-color: #003366; 
+    box-shadow: none; /* removes bootstrap's default focus shadow */
+    outline: none; /* removes the outline */
+}
+
+/* Contact Form Styles */
+.contact-form {
+    background: #fff;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+    padding: 4cm;
+}
+
+.contact-form .form-control:focus {
+    border-color: #003366;
+    box-shadow: none;
+}
+
+.contact-form h3 {
+    font-size: xx-large;
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #003366;
+}
+
+.contact-form .btn-primary {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    border: none;
+    background: #003366;
+    font-size: 14px;
+    padding: 15px 0;
+    border-radius: 2rem;
+    text-transform: uppercase;
+}
+
+.image-shadow {
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, shadow color */
+    transition: 0.3s; /* Optional: for a smooth transition effect on hover */
+}
+
+.image-container {
+    margin-bottom: 20px;
+    overflow: hidden; /* Ensures the shadow and tilt effect are contained */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    transform: rotate(2deg); /* Slight tilt to the left */
+}
+
+.image-container-2 {
+    margin-bottom: 20px;
+    overflow: hidden; /* Ensures the shadow and tilt effect are contained */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    transform: rotate(-5deg); /* Slight tilt to the left */
+}
+.image-container-3 {
+    margin-bottom: 20px;
+    overflow: hidden; /* Ensures the shadow and tilt effect are contained */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    transform: rotate(-4deg); /* Slight tilt to the left */
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 2cm;
+    padding-top: 2cm;
+    position: relative;
+    background: url('../images/bench_footer.JPG') center / cover no-repeat fixed;
+    height: 60vh;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 72, 143, 0.6); /* Transparent blue overlay :) */
+    z-index: 1;
+}
+
+footer .container-fluid {
+    position: relative;
+    z-index: 2;
+}

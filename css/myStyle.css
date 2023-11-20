@@ -141,7 +141,7 @@ footer {
     padding-top: 2cm;
     position: relative;
     background: url('../images/bench_footer.JPG') center / cover no-repeat fixed;
-    height: 60vh;
+    height: 80vh;
 }
 
 footer::before {
@@ -153,6 +153,10 @@ footer::before {
     bottom: 0;
     background: rgba(0, 72, 143, 0.6); /* Transparent blue overlay :) */
     z-index: 1;
+}
+
+.footer-below {
+    background-color: #003366;
 }
 
 footer .container-fluid {
